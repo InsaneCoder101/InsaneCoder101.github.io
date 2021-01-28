@@ -1,4 +1,5 @@
 # InsaneCoder101.github.io
 
 
-Basic html file
+My first ever site published on github.
+Also a site for an FLL team called the nether bots
