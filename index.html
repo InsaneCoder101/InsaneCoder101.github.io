@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+	<style>
     #firstHeader{
 text-align:center;
 }
@@ -165,8 +166,13 @@ left:1580px;
 text-align:center;
 
 }
+#nonvis{
+display:none
+
+}
 
 
+    
     
     </style>
 </head>
@@ -177,7 +183,7 @@ text-align:center;
     <a class="activemn" href="#"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
     <a href="#Team"><i class="fa fa-fw fa-user"></i>&nbsp;The Team</a>
     <a href="#">&nbsp;<i class="fa fa-folder-open"></i>&nbsp;Our Idea</a>
-    <a href="#"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact Us</a>
+    <a href="#ContactUs"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact Us</a>
 </div>
 
 <br>
@@ -225,26 +231,59 @@ text-align:center;
 <h1 id="Team" style="text-align:center;">The Team</h1><br>
 
 
-<div class='newscapt' style="width: 100%; overflow: hidden;">
-    <!-- <div style="background-color:#c2c2d6;width:340px;height:600px;display:block;"><h2>Smayan</h2></div>
-    <div style="background-color:#c2c2d6;width:340px;height:600px;display:block;"><h2>Arnav</h2></div> -->
+<div class='newscapt' style="width: 100%; overflow: hidden;text-align:center;">
+
 
     <div style="display: inline-block;background-color:#c2c2d6;width:340px;height:600px;">
         <h2>Smayan</h2>
-    </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <ul style="text-align:center">
+            <li>I love anime, and my favorite one is Naruto</li>
+            <li>My favorite school subject is math</li>
+            <li>I am 11 years old</li>
+            <li>I am in fifth grade</li>
+            <li>My favorite color is blue</li>
+            <li>My favorite sports are basketball and football</li>
+            <li>My favorite basketball team is the Rockets</li>
+            <li>My favorite football team is the 49ers</li>
+            <li>My favorite book series is Percy Jackson</li>
+        </ul>
+    </div>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
     &emsp;&emsp;&emsp;&emsp;&emsp;
+
     <div style="display: inline-block;background-color:#c2c2d6;width:340px;height:600px;">
         <h2>Aarnav</h2>
+        <ul style="text-align:center">
+            <li>My favorite book series is Harry Potter</li>
+            <li>I have a chipped off tooth from a bike crash</li>
+            <li>I am nearsighted</li>
+            <li>My favorite hobby is playing chess</li>
+            <li>I have extra classes 3-5 days a week</li>
 
+            <div id="nonvis">
+                <li>My favorite sports are basketball and football</li>
+                <li>My favorite basketball team is the Rockets</li>
+                <li>My favorite football team is the 49ers</li>
+                <li>My favorite book series is Percy Jackson</li>
+            </div>
+        </ul>
 
     </div>
 </div>
 <br><br>
-<h1 style="text-align:center;">Contact Us</h1>
+<h1 style="text-align:center;" id="ContactUs">Contact Us</h1>
 <br><br>
-<textarea class="serverfeedback" placeholder="Feedback here"></textarea>
+<form id="feedback">
+
+<textarea class="serverfeedback" placeholder="Feedback here"></textarea><br>
+<button type="submit">Submit</button>
+</form>
+
 <script>
+
+
+//Process the slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -274,7 +313,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+
+
 </script>
 
 </body>
 </html>
+
+
