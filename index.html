@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -190,10 +191,10 @@ background:#7dcadb;
 <body>
 
 <div class="navbar" style="position:fixed;top:0px;left:0px;z-index:1;">
-    <a class="activemn" href="#"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
-    <a href="#Team"><i class="fa fa-fw fa-user"></i>&nbsp;The Team</a>
-    <a href="#">&nbsp;<i class="fa fa-folder-open"></i>&nbsp;Our Idea</a>
-    <a href="#ContactUs"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact Us</a>
+    <a class="activemn" href="#" id="tl" onclick="giveOne()"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
+    <a href="#Team" id="ttwo" onclick="giveTwo()"><i class="fa fa-fw fa-user"></i>&nbsp;The Team</a>
+    <a href="#" id="tthree" onclick="giveThree()">&nbsp;<i class="fa fa-folder-open"></i>&nbsp;Our Idea</a>
+    <a href="#ContactUs" id="tfour" onclick="giveFour()"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact Us</a>
 </div>
 
 <br>
@@ -321,6 +322,30 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+function delA(){
+document.getElementById('tl').classList.remove('activemn')
+document.getElementById('ttwo').classList.remove('activemn')
+document.getElementById('tthree').classList.remove('activemn')
+document.getElementById('tfour').classList.remove('activemn')
+}
+
+function giveOne(){
+delA()
+document.getElementById('tl').classList.add('activemn')
+}
+function giveTwo(){
+delA()
+document.getElementById('ttwo').classList.add('activemn')
+}
+function giveThree(){
+delA()
+document.getElementById('tthree').classList.add('activemn')
+}
+function giveFour(){
+delA()
+document.getElementById('tfour').classList.add('activemn')
 }
 
 
